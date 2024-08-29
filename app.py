@@ -3,9 +3,9 @@ import pandas as pd
 from PIL import Image
 import pickle
 import numpy as np
-data1 = pd.read_csv(r"C:\Users\KRISHNA KUMAR\bengaluru_house_prices.csv")
-data2= pd.read_csv(r"C:\Users\KRISHNA KUMAR\processed_data.csv")
-x = pd.read_csv(r"C:\Users\KRISHNA KUMAR\x.csv")
+data1 = pd.read_csv("bengaluru_house_prices.csv")
+data2= pd.read_csv("processed_data.csv")
+x = pd.read_csv("x.csv")
 with open('banglore_home_prices_model.pickle','rb') as f:
    model= pickle.load(f)
 def predict_price(location,sqft,bath,bhk):
